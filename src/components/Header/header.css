@@ -74,11 +74,23 @@
 
 .profile-menu-flex {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-items: center;
     gap: 0.25rem;
     color: var(--font-grey);
-    border: 1.5px solid var(--grey);
-    padding: 0.2rem;
+    border: 1px solid var(--grey);
+    padding: 0.5rem;
     border-radius: 2rem;
 }
+
+.profile-menu-flex:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 15%), 0 2px 2px rgb(0 0 0 / 12%);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.menu-items {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.65rem !important;
+}
+

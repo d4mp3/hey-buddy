@@ -4,6 +4,7 @@ import logo from "../../assets/brand/png/logo-no-background.png";
 import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
 import LanguageIcon from '@mui/icons-material/Language';
 import BasicMenu from './ProfileMenu';
+import MobileSearchBar from '../MobileSearchBar/MobileSearchBar';
 
 function Header() {
   return (
@@ -26,6 +27,7 @@ function Header() {
             <BasicMenu />
           </div>
         </div>
+        <MobileSearchBar />
     </div>
   )
 }

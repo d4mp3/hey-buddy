@@ -1,10 +1,10 @@
 .bottom-nav {
-    display: none;
+    display: none !important;
 }
 
 @media only screen and (max-width: 800px) {
     .bottom-nav {
-        display: block;
+        display: block !important;
         position: fixed;
         bottom: 0;
         left: 0;

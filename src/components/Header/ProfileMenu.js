@@ -43,7 +43,7 @@ export default function BasicMenu() {
             marginTop: "0.5rem",
             boxShadow: "0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);" }}}
       >
-        <MenuItem className="menu-items" onClick={handleClose}>Signup</MenuItem>
+        <MenuItem className="menu-items menu-items-signup" onClick={handleClose}>Signup</MenuItem>
         <MenuItem className="menu-items" onClick={handleClose}>Login</MenuItem>
         <div style={{ height: "0.5px", backgroundColor: "var(--grey)", width: "100%"}} />
         <MenuItem className="menu-items" onClick={handleClose}>Hey Buddy Home</MenuItem>

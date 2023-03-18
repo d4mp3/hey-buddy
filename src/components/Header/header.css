@@ -94,3 +94,18 @@
     font-size: 0.65rem !important;
 }
 
+.menu-items-signup {
+    font-weight: 600 !important;
+}
+
+.menu-items-signup {
+    font-weight: 600 !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-logo,
+    .profile-container,
+    .search-bar {
+        display: none;
+    }
+}

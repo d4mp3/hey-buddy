@@ -1,5 +1,6 @@
 .filter-div {
     border-top: 1px solid var(--grey);
+    margin-top: 3px;
     padding: 1rem 3rem;
     display: flex;
     justify-content: flex-start;
@@ -12,10 +13,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 2rem;
+    margin-right: 0.5rem;
     opacity: 0.5;
     border-bottom: 1px solid var(--white);
-    min-width: 85px;
+    min-width: 60px;
   }
 
   .links-box:hover,
@@ -27,15 +28,14 @@
   }
 
   .links-img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
     object-fit: contain;
   }
 
   .links-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--font-grey);
+    font-size: 0.5rem;
+    font-weight: 400;
   }
 
   .selected-label {

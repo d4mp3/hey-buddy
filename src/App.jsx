@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./app.css";
 import { list, list2 } from "./assets/cards-list";
 import Cards from "./components/Cards";
 import Filter from "./components/Filter";

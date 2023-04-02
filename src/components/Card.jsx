@@ -16,11 +16,11 @@ function Card({card}) {
       cssMode={true}
       pagination
       modules={[Pagination, Navigation]}
-      className='h-72 w-72 overflow-hidden'
+      className='overflow-hidden lg:h-72 lg:w-72 sm:max-h-96 sm:w-11/12 sm:h-2/4 md:h-96 md:w-5/12'
     >
       {card.imgSrc.map((src, i) => (
         <SwiperSlide key={i}>
-          <img src={src} className='h-72 w-72 object-cover rounded-lg' />
+          <img src={src} className='overflow-hidden object-cover lg:h-72 lg:w-72 sm:max-h-96 sm:w-11/12 sm:h-2/4 md:h-96 md:w-5/12' />
         </SwiperSlide>
       ))}
     </Swiper>

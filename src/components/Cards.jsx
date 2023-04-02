@@ -2,7 +2,7 @@ import Card from './Card';
 
 function Cards({ list }) {
     return (
-        <div className='flex justify-center flex-wrap py-4 px-12'>
+        <div className='flex justify-center flex-wrap py-4 px-12 md:p-0'>
             {list.map((card, i) => (
                 <Card card={card} key={i} />
             ))}

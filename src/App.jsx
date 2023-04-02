@@ -9,19 +9,12 @@ function App() {
   const [selectedFilter, setSelectedFilter] = useState(0);
   return (
     <div className=''>
-      {/* <Header />
-      <Filter
-        selectedFilter={selectedFilter}
-        setSelectedFilter={setSelectedFilter}
-      />
-      {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />} */}
-
       <Header />
       <SearchFilter
         selectedFilter={selectedFilter}
         setSelectedFilter={setSelectedFilter}
       />
-      <Cards list={list}/>
+       {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />}
     </div>
   );
 }

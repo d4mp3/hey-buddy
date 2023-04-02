@@ -18,6 +18,7 @@ function App() {
 
       <Header />
       <SearchFilter />
+      <Cards list={list}/>
     </div>
   );
 }

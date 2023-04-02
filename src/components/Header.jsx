@@ -1,10 +1,9 @@
 import { MagnifyingGlassIcon, UserCircleIcon, Bars3Icon} from '@heroicons/react/20/solid';
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
-// import SearchIcon from 'virtual:vite-icons/heroicons/solid'
 
 function Header() {
   return (
-    <header className='overflow-hidden sticky top-0 z-50 grid grid-cols-3 shadow-md p-5 pr-16'>
+    <header className='overflow-hidden sticky top-0 z-50 grid grid-cols-3 shadow-md p-5 pr-16 bg-white'>
       <div className='relative flex items-center h-10 cursor-pointer my-auto'>
         <img className='h-56' src='src\assets\logo\long-logo.png' alt=''></img>
       </div>

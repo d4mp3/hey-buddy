@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { list, list2 } from './assets/cards-list';
 import Cards from './components/Cards';
-import Filter from './components/Filter';
 import Header from './components/Header';
 import SearchFilter from './components/SearchFilter';
 

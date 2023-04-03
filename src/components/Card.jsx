@@ -7,7 +7,7 @@ import { Pagination, Navigation } from 'swiper';
 
 function Card({card}) {
   return (
-    <div className='m-4 mb-8'>
+    <div className='m-4 mb-4'>
     <Swiper
       slidesPerView={1}
       spaceBetween={15}

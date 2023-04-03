@@ -9,7 +9,7 @@ function Header() {
       </div>
       <div className='w-[90vw] flex md:w-auto items-center border-2 rounded-full py-2 md:shadow-sm md:hover:shadow-lg'>
         <input className='flex-grow pl-5 bg-transparent outline-none text-sm text-gray-400' type='text' placeholder='Start your search' />
-        <MagnifyingGlassIcon className='hidden lg:inline-flex h-8 bg-yellow-700 text-white rounded-full p-1.5 cursor-pointer md:mx-2' />
+        <MagnifyingGlassIcon className='hidden lg:inline-flex md:w-[32px] h-8 bg-yellow-700 text-white rounded-full p-1.5 cursor-pointer md:mx-2' />
       </div>
       <div className='hidden md:flex items-center space-x-4 justify-end text-gray-500'>
         <p className='hidden lg:inline cursor-pointer'>Become a Buddies friend!</p>

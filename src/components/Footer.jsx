@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <Box sx={{ width: 500 }}>
       <BottomNavigation
-        className='bottom-nav'
+        className='flex md:hidden fixed bottom-0 left-0 w-full border-t border-solid border-gray-400 shadow	 z-10'
         showLabels
         value={value}
         onChange={(event, newValue) => {

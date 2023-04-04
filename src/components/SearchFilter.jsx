@@ -7,7 +7,7 @@ function SearchFilter({ selectedFilter, setSelectedFilter }) {
             <div
             key={i}
             className={`flex flex-col min-w-max justify-center items-center mr-8 opacity-50 border-b-2 border-solid border-white
-            hover:opacity-100 hover:cursor-pointer hover:border-gray-400' ${i == selectedFilter && 'text-black'}`}
+            hover:opacity-100 hover:cursor-pointer hover:border-gray-400 ${i == selectedFilter && 'text-black opacity-100 border-black '}`}
             onClick={() => {
             console.log("selecting key", i);
             setSelectedFilter(i);

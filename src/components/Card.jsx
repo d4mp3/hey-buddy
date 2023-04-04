@@ -7,7 +7,7 @@ import { Pagination, Navigation } from 'swiper';
 
 function Card({card}) {
   return (
-    <div className='m-4 mb-4'>
+    <div className='m-1 md:m-4 md:mb-4'>
     <Swiper
       slidesPerView={1}
       spaceBetween={15}
@@ -16,11 +16,11 @@ function Card({card}) {
       cssMode={true}
       pagination
       modules={[Pagination, Navigation]}
-      className='h-3/6 max-h-[300px] w-[90vw] md:h-[300px] md:w-[40vw] lg:h-[300px] lg:w-[315px] overflow-hidden'
+      className='h-100 max-h-[300px] w-[90vw] md:h-[300px] md:w-[40vw] lg:h-[300px] lg:w-[315px] overflow-hidden'
     >
       {card.imgSrc.map((src, i) => (
         <SwiperSlide key={i}>
-          <img src={src} className='h-3/6 max-h-[300px] w-[90vw] md:h-[300px] md:w-[40vw] lg:h-[300px] lg:w-[315px] overflow-hidden object-fill rounded-lg' />
+          <img src={src} className='h-100 max-h-[300px] w-[90vw] md:h-[300px] md:w-[40vw] lg:h-[300px] lg:w-[315px] object-cover rounded-lg' />
         </SwiperSlide>
       ))}
     </Swiper>

@@ -1,4 +1,5 @@
 import { links } from '../assets/images-links';
+import { twMerge } from "tailwind-merge";
 
 function SearchFilter({ selectedFilter, setSelectedFilter }) {
   return (
@@ -6,8 +7,8 @@ function SearchFilter({ selectedFilter, setSelectedFilter }) {
         {links.map((item, i) => (
             <div
             key={i}
-            className={`flex flex-col min-w-max justify-center items-center mr-8 opacity-50 border-b-2 border-solid border-white
-            hover:opacity-100 hover:cursor-pointer hover:border-gray-400 ${i == selectedFilter && 'text-black opacity-100 border-black '}`}
+            className={twMerge`flex flex-col min-w-max justify-center items-center mr-8 opacity-50 border-b-2 border-solid border-white
+            hover:opacity-100 hover:cursor-pointer hover:border-gray-400 ${i == selectedFilter && 'opacity-100 border-black '}`}
             onClick={() => {
             console.log("selecting key", i);
             setSelectedFilter(i);

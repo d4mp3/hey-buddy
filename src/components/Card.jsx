@@ -20,7 +20,7 @@ function Card({card}) {
     >
       {card.imgSrc.map((src, i) => (
         <SwiperSlide key={i}>
-          <img src={src} className='h-3/6 max-h-[300px] w-[90vw] md:h-[300px] md:w-[40vw] lg:h-[300px] lg:w-[315px] overflow-hidden object-cover rounded-lg' />
+          <img src={src} className='h-3/6 max-h-[300px] w-[90vw] md:h-[300px] md:w-[40vw] lg:h-[300px] lg:w-[315px] overflow-hidden object-fill rounded-lg' />
         </SwiperSlide>
       ))}
     </Swiper>

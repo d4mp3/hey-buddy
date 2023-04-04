@@ -21,7 +21,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sirv": "^2.0.2",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "tailwind-merge": "^1.11.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

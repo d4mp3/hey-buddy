@@ -7,13 +7,13 @@ function SearchFilter({ selectedFilter, setSelectedFilter }) {
             <div
             key={i}
             className={`flex flex-col min-w-max justify-center items-center mr-8 opacity-50 border-b-2 border-solid border-white
-            hover:opacity-100 hover:cursor-pointer hover:border-gray-400' ${i == selectedFilter && 'text-black'}`}
+            hover:opacity-100 hover:cursor-pointer hover:border-gray-400 ${i == selectedFilter && 'opacity-100 cursor-pointer border-black'}`}
             onClick={() => {
             console.log("selecting key", i);
             setSelectedFilter(i);
           }}>
             <img src={item.imgSrc} className='w-6 h-6 object-contain' />
-            <p className='text-xs'>{item.label}</p>
+            <p className={`text-xs ${i == selectedFilter && 'text-black'}`}>{item.label}</p>
           </div>
         ))}
     </div>

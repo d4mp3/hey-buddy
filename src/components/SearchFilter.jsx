@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 function SearchFilter({ selectedFilter, setSelectedFilter }) {
   return (
-    <div className='hidden md:flex justify-start items-center overflow-x-auto mx-16 pt-8 gap-x-2'>
+    <div className='hidden md:flex justify-start items-center overflow-x-auto mx-16 pt-8 gap-x-2 scrollbar-hide'>
         {links.map((item, i) => (
             <div
             key={i}

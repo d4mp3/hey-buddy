@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className='overflow-hidden sticky top-0 z-50 grid grid-cols-3 shadow-md p-5 pr-16 bg-white'>
       <div className='relative hidden md:flex items-center h-10 cursor-pointer my-auto'>
-        <img className='h-56' src='src\assets\logo\long-logo.png' alt=''></img>
+        <img className='h-56' src='/long-logo.png' alt='logo'></img>
       </div>
       <div className='w-[90vw] flex md:w-auto items-center border-2 rounded-full py-2 md:shadow-sm md:hover:shadow-lg'>
         <input className='flex-grow pl-5 bg-transparent outline-none text-sm text-gray-400' type='text' placeholder='Start your search' />

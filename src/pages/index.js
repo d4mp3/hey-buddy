@@ -10,7 +10,8 @@ import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ exploreData }) {
+  console.log(exploreData)
   const [selectedFilter, setSelectedFilter] = useState(0);
   return (
     <div className=''>
@@ -27,7 +28,23 @@ export default function Home() {
       />
        {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />}
       <Footer />
+      {exploreData?.map(item => (
+        <h1>{item.title}</h1>
+      ))}
 
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const exploreData = await fetch('https://www.jsonkeeper.com/b/ZEI1').
+  then(
+    (res) => res.json()
+  );
+
+  return {
+    props: {
+      exploreData,
+    },
+  };
 }

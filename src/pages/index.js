@@ -28,16 +28,16 @@ export default function Home({ exploreData }) {
       />
        {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />}
       <Footer />
-      {exploreData?.map(item => (
+      {/* {exploreData?.map(item => (
         <h1>{item.title}</h1>
-      ))}
+      ))} */}
 
     </div>
   )
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch('https://www.jsonkeeper.com/b/ZEI1').
+  const exploreData = await fetch('https://www.jsonkeeper.com/b/71XA').
   then(
     (res) => res.json()
   );

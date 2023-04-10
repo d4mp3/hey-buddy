@@ -7,7 +7,7 @@ function SearchFilter({ selectedFilter, setSelectedFilter }) {
         {links.map((item, i) => (
             <div
             key={i}
-            className={twMerge`flex flex-col min-w-max justify-center items-center ml-16 opacity-50 border-b-[3px] border-solid border-white
+            className={twMerge`flex flex-col min-w-max justify-center items-center ml-16 opacity-50 border-b-[2px] border-solid border-white
             hover:opacity-100 hover:cursor-pointer hover:border-gray-400 ${i == selectedFilter && 'opacity-100 border-black '}`}
             onClick={() => {
             console.log("selecting key", i);

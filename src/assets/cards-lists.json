@@ -1,0 +1,144 @@
+[
+  {
+    "rating": "4",
+    "desc": "Beach and Sunset Views",
+    "imgSrc": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg",
+      "https://www.travelandleisure.com/thmb/BJupPeakYV7RY_vQQnmvrKAl7LU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/soneva-jani-sunset-view-maldives-SONEVA0421-74b37591d80441ce87831a41da518e49.jpg",
+      "https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683"
+    ],
+    "price": "20000",
+    "date": "15-20 May",
+    "title": "Hotel 0000"
+  },
+  {
+    "rating": "5",
+    "desc": "Mountain Retreat",
+    "imgSrc": [
+      "https://cdn.pixabay.com/photo/2017/08/07/08/54/mountains-2599826_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/08/07/08/54/mountains-2599827_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/01/19/17/55/aurora-borealis-1149815_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/08/07/08/54/mountains-2599825_1280.jpg"
+    ],
+    "price": "35000",
+    "date": "1-5 October",
+    "title": "Mountain Lodge"
+  },
+  {
+    "rating": "4",
+    "desc": "Historic Landmarks",
+    "imgSrc": [
+      "https://cdn.pixabay.com/photo/2015/03/26/09/39/louvre-pyramid-693129_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/21/13/27/old-town-1846945_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/09/05/15/23/castle-1647153_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/03/26/09/43/eiffel-tower-693217_1280.jpg"
+    ],
+    "price": "25000",
+    "date": "7-10 December",
+    "title": "Historic Inn"
+  },
+  {
+    "rating": "5",
+    "desc": "City Skyline Views",
+    "imgSrc": [
+      "https://cdn.pixabay.com/photo/2018/07/14/15/27/cafe-3537801_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/03/26/09/47/skyline-690201_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/01/11/17/22/architecture-1971180_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/06/18/10/city-urban-sunset-1804062_1280.jpg"
+    ],
+    "price": "50000",
+    "date": "10-14 July",
+    "title": "Hotel XYZ"
+  },
+  {
+    "rating": "4",
+    "desc": "Mountain Views",
+    "imgSrc": [
+      "https://cdn.pixabay.com/photo/2014/03/27/14/47/yellowstone-national-park-298118_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/19/17/05/lake-1845955_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/03/19/23/03/sky-680293_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/10/13/04/27/hiking-985915_1280.jpg"
+    ],
+    "price": "40000",
+    "date": "21-24 August",
+    "title": "Mountain Resort"
+  },
+  {
+    "rating": "4.5",
+    "desc": "Luxury Chalet in Tatra Mountains, Slovakia",
+    "imgSrc": [
+      "https://www.skislovakia.sk/upload/objekty/chaty-chalupy/2507/img/mountain-resort-terchova-07.jpg",
+      "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/71/90/719090_v8.jpeg"
+    ],
+    "price": "50000",
+    "date": "10-20 June",
+    "title": "Tatra Chalet",
+    "location": "Zazriva, Slovakia"
+  },
+  {
+    "rating": "4",
+    "desc": "Apartment in Zakopane with a Stunning View of the Tatras",
+    "imgSrc": [
+      "https://cf.bstatic.com/images/hotel/max1024x768/255/255210583.jpg",
+      "https://cf.bstatic.com/images/hotel/max1280x900/255/255210703.jpg"
+    ],
+    "price": "30000",
+    "date": "15-25 July",
+    "title": "Zakopane Apartment",
+    "location": "Zakopane, Poland"
+  },
+  {
+    "rating": "5",
+    "desc": "Luxury Villa with a Private Beach in Lithuania",
+    "imgSrc": [
+      "https://www.balticlakes.lt/uploads/galleries/coverphoto/coverphoto_277.jpg",
+      "https://lh3.googleusercontent.com/proxy/LvNziOyls9s-zZtYBuklGvglK3qpwI29KVrACrICmye1vAZ_nRa0Rtpm9tTVc6noPl5j5R5tyJbN-5N2Q3ofMvAHMqgabuOJfyHym7yvHnmwGJ8zL12nzoY38PucvU9W=w720-h405"
+    ],
+    "price": "80000",
+    "date": "1-15 August",
+    "title": "Baltic Villa",
+    "location": "Palanga, Lithuania"
+  },
+  {
+    "rating": "4.5",
+    "desc": "Luxury Beachfront Villa in Bali, Indonesia",
+    "imgSrc": [
+      "https://cf.bstatic.com/images/hotel/max1024x768/229/229315168.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/229/229315248.jpg"
+    ],
+    "price": "60000",
+    "date": "10-20 September",
+    "title": "Bali Villa",
+    "location": "Bali, Indonesia"
+  },
+
+  {
+    "rating": "4",
+    "desc": "Apartment with a Panoramic View of Hong Kong",
+    "imgSrc": [
+      "https://cf.bstatic.com/images/hotel/max1024x768/267/267465613.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/267/267466006.jpg"
+    ],
+    "price": "40000",
+    "date": "15-25 October",
+    "title": "Hong Kong Apartment",
+    "location": "Hong Kong, China"
+  },
+
+  {
+    "rating": "5",
+    "desc": "Private Villa with a Pool in Phuket, Thailand",
+    "imgSrc": [
+      "https://cf.bstatic.com/images/hotel/max1024x768/271/271873327.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/271/271873290.jpg"
+    ],
+    "price": "80000",
+    "date": "1-15 November",
+    "title": "Phuket Villa",
+    "location": "Phuket, Thailand"
+  }
+]
+
+
+https://jsonkeeper.com/b/71XA

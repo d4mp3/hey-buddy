@@ -28,14 +28,14 @@ export default function Footer() {
         </BottomNavigation>
       </Box>
       <footer className='hidden md:flex justify-between shadow-sm text-sm text-gray-700 border-t-[2px] border-solid fixed bottom-0 bg-white z-50 w-screen'>
-        <div className='flex p-3 mx-16'>
+        <div className='flex p-3 mx-8'>
           <span className='mx-6'>© 2023 Hey-Buddy</span>
           <ul className='flex w-auto flex-wrap gap-x-4 list-disc'>
-            <li><span className='relative left-[-4px]'>Terms</span></li>
-            <li><span className='relative left-[-4px]'>Sitemap</span></li>
-            <li><span className='relative left-[-4px]'>Privacy</span></li>
-            <li><span className='relative left-[-4px]'>Your Privacy Choices</span></li>
-            <li><span className='relative left-[-4px]'>Destinations</span></li>
+            <li><span className='relative left-[-4px] hover:underline cursor-pointer'>Terms</span></li>
+            <li><span className='relative left-[-4px] hover:underline cursor-pointer'>Sitemap</span></li>
+            <li><span className='relative left-[-4px] hover:underline cursor-pointer'>Privacy</span></li>
+            <li><span className='relative left-[-4px] hover:underline cursor-pointer'>Your Privacy Choices</span></li>
+            <li><span className='relative left-[-4px] hover:underline cursor-pointer'>Destinations</span></li>
           </ul>
         </div>
         <div className='flex justify-between font-bold p-3 mx-16  gap-x-4 '>

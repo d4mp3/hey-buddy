@@ -3,11 +3,11 @@ import { twMerge } from "tailwind-merge";
 
 function SearchFilter({ selectedFilter, setSelectedFilter }) {
   return (
-    <div className='hidden md:flex justify-start items-center overflow-x-auto mx-16 pt-8 gap-x-2'>
+    <div className='hidden md:flex w-100 justify-start items-center overflow-x-auto pt-8 pb-2 shadow gap-x-2 scrollbar-hide sticky top-20 z-40 bg-white'>
         {links.map((item, i) => (
             <div
             key={i}
-            className={twMerge`flex flex-col min-w-max justify-center items-center mr-8 opacity-50 border-b-2 border-solid border-white
+            className={twMerge`flex flex-col min-w-max justify-center items-center ml-16 opacity-50 border-b-[2px] border-solid border-white
             hover:opacity-100 hover:cursor-pointer hover:border-gray-400 ${i == selectedFilter && 'opacity-100 border-black '}`}
             onClick={() => {
             console.log("selecting key", i);

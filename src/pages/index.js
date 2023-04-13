@@ -2,11 +2,12 @@ import { useState } from 'react';
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { list, list2 } from '../assets/cards-list'
-import styles from '@/styles/Home.module.css'
+// import '../styles/globals.css'
 import SearchFilter from '@/components/SearchFilter'
 import Header from '@/components/Header'
 import Cards from '@/components/Cards'
 import Footer from '@/components/Footer'
+import MobileFooter from '@/components/MobileFooter';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,8 +27,9 @@ export default function Home({ exploreData }) {
         selectedFilter={selectedFilter}
         setSelectedFilter={setSelectedFilter}
       />
-       {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />}
-      <Footer />
+      {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />}
+      <MobileFooter />
+      <Footer className='fixed bottom-0' />
       {/* {exploreData?.map(item => (
         <h1>{item.title}</h1>
       ))} */}
@@ -38,9 +40,9 @@ export default function Home({ exploreData }) {
 
 export async function getStaticProps() {
   const exploreData = await fetch('https://www.jsonkeeper.com/b/71XA').
-  then(
-    (res) => res.json()
-  );
+    then(
+      (res) => res.json()
+    );
 
   return {
     props: {

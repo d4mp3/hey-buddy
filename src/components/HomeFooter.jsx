@@ -1,11 +1,13 @@
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
+import { twMerge } from "tailwind-merge";
 
 
-export default function Footer() {
+export default function HomeFooter( {className} ) {
+  const classes = twMerge(`hidden md:flex md:grow md:shrink justify-between shadow-sm text-sm text-gray-700
+  border-t-[2px] border-solid bg-white z-50 w-screen ${className ?? ''}`);
 
   return (
-    <div>
-      <footer className='hidden md:flex justify-between shadow-sm text-sm text-gray-700 border-t-[2px] border-solid bg-white z-50 w-screen'>
+      <footer className={classes}>
         <div className='flex p-3 mx-8'>
           <span className='mx-6'>© 2023 Hey-Buddy</span>
           <ul className='flex w-auto flex-wrap gap-x-4 list-disc'>
@@ -16,7 +18,7 @@ export default function Footer() {
             <li><span className='relative left-[-4px] hover:underline cursor-pointer'>Destinations</span></li>
           </ul>
         </div>
-        <div className='flex justify-between font-bold p-3 mx-16  gap-x-4'>
+        <div className='flex justify-between font-bold p-3 mx-16 gap-x-4'>
           <button>
             <span className='mr-2'>
               <GlobeAltIcon className='hidden md:inline h-5 cursor-pointer' />
@@ -37,7 +39,7 @@ export default function Footer() {
           </button>
         </div>
       </footer>
-    </div>
+
 
   );
 }

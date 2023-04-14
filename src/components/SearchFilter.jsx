@@ -16,7 +16,7 @@ function SearchFilter({ selectedFilter, setSelectedFilter }) {
             }}>
             <img src={item.imgSrc} className='w-6 h-6 object-contain' />
             <p className={`text-xs group-hover:underline decoration-gray-400 decoration-2 underline-offset-8
-            ${i == selectedFilter && 'opacity-100 underline decoration-black'}`}>
+            ${i == selectedFilter && 'opacity-100 underline decoration-gray-950'}`}>
               {item.label}</p>
           </div>
         ))}

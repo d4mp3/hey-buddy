@@ -7,7 +7,7 @@ import { DateRangePicker } from 'react-date-range';
 import { useRouter } from 'next/router';
 
 
-function Header() {
+function Header( {placeholder} ) {
   const [searchInput, setSearchInput] = useState('');
   const [startDate, setSartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -33,7 +33,10 @@ function Header() {
     router.push({
       pathname: '/search',
       query: {
-
+        location: searchInput,
+        startDate: startDate.toISOString(),
+        endDate: endDate.toISOString(),
+        noOfGuests,
       }
     });
   };
@@ -50,7 +53,7 @@ function Header() {
         onChange={(e) => setSearchInput(e.target.value)}
         className='flex-grow pl-5 bg-transparent outline-none text-sm font-bold'
         type='text'
-        placeholder='Start your search' />
+        placeholder={placeholder || 'Start your search'} />
         <MagnifyingGlassIcon className='hidden lg:inline-flex md:w-[32px] h-8 bg-yellow-700 text-white rounded-full p-1.5 cursor-pointer md:mx-2' />
       </div>
       <div className='hidden md:flex items-center space-x-2 justify-end text-gray-700'>

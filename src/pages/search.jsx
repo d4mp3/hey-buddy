@@ -16,7 +16,7 @@ function Search() {
         selectedFilter={selectedFilter}
         setSelectedFilter={setSelectedFilter}
       />
-      <p className='text-sm font-semibold'>Over 1000 houses</p>
+      <p className='text-sm font-semibold mx-6 my-6'>Over 1000 houses</p>
       {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />}
       <MobileFooter />
       <ResultsPageFooter />

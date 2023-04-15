@@ -67,7 +67,7 @@ const InfoPlace = ({ imgSrc, location, title, desc, rating, price, total }) => {
           <div className='flex flex-col'>
             <p className='text-lg font-semibold pb-2 lg:text-2xl'>€{price} / night</p>
             <p className='text-right font-extralight'>€{total} total</p>
-            <button className=" bg-yellow-500 hover:bg-yellow-700 text-white font-bold my-2 py-2 px-4 rounded">
+            <button className="bg-red-400 hover:bg-yellow-500 text-white font-bold my-2 py-2 px-4 rounded-lg">
               Book Now
             </button>
           </div>

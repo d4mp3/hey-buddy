@@ -54,7 +54,7 @@ function Header( {placeholder} ) {
         className='flex-grow pl-5 bg-transparent outline-none text-sm font-bold'
         type='text'
         placeholder={placeholder || 'Start your search'} />
-        <MagnifyingGlassIcon className='hidden lg:inline-flex md:w-[32px] h-8 bg-yellow-700 text-white rounded-full p-1.5 cursor-pointer md:mx-2' />
+        <MagnifyingGlassIcon onClick={search} className='hidden lg:inline-flex md:w-[32px] h-8 bg-yellow-700 text-white rounded-full p-1.5 cursor-pointer md:mx-2' />
       </div>
       <div className='hidden md:flex items-center space-x-2 justify-end text-gray-700'>
         <p className='hidden lg:inline cursor-pointer rounded-3xl p-2 hover:bg-zinc-100'>Become a Buddies friend!</p>
@@ -86,7 +86,7 @@ function Header( {placeholder} ) {
         </div>
         <div className='flex'>
           <button className='flex-grow text-gray-500 onAction' onClick={resetInput}>Cancel</button>
-          <button onClick={search} className='flex-grow text-red-400'>Search</button>
+          <button onClick={search} className='flex-grow text-red-500 font-semibold'>Search</button>
         </div>
       </div>
       }

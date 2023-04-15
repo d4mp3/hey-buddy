@@ -4,10 +4,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper';
+import { useRouter } from 'next/router';
+
 
 function Card({card}) {
+  const router = useRouter();
+
   return (
-    <div className='m-1 md:m-4 md:mb-4'>
+    <div onClick={() => router.push('/place')} className='m-1 md:m-4 md:mb-4 cursor-pointer'>
     <Swiper
       slidesPerView={1}
       spaceBetween={15}

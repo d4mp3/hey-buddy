@@ -1,6 +1,8 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import InfoPlace from '@/components/InfoPlace';
+import MobileFooter from '@/components/MobileFooter';
+
 
 
 function Place({ searchResults }) {
@@ -18,6 +20,7 @@ function Place({ searchResults }) {
           total={searchResults[1].total}
         />
         <Footer />
+        <MobileFooter />
     </div>
   )
 }

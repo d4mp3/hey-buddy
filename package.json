@@ -19,6 +19,7 @@
     "react": "^18.2.0",
     "react-date-range": "^1.4.0",
     "react-dom": "18.2.0",
+    "react-photo-album": "^2.0.4",
     "swiper": "^8.4.5",
     "tailwind-merge": "^1.11.0",
     "tailwind-scrollbar-hide": "^1.1.7"

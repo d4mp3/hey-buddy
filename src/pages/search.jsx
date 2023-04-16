@@ -7,6 +7,7 @@ import { list, list2 } from '../assets/cards-list';
 import SearchFilter from '@/components/SearchFilter';
 import { useRouter } from 'next/router';
 import format from 'date-fns/format';
+import BaseMap from "@/components/BaseMap";
 
 function Search({ searchResults }) {
   const [selectedFilter, setSelectedFilter] = useState(0);
@@ -20,16 +21,35 @@ function Search({ searchResults }) {
 
   return (
     <div>
-      <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`}/>
-       <SearchFilter
-        selectedFilter={selectedFilter}
-        setSelectedFilter={setSelectedFilter}
-      />
-      <p className='text-sm font-semibold mx-6 my-6'>Over 1000 houses</p>
-      {/* {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />} */}
-      <Cards list={searchResults} />
-      <MobileFooter />
-      <ResultsPageFooter />
+      <main>
+        <section>
+          <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`} />
+          <SearchFilter
+            selectedFilter={selectedFilter}
+            setSelectedFilter={setSelectedFilter}
+          />
+
+        </section>
+
+
+          {/* {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />} */}
+          <div className='flex'>
+          <div className='flex flex-col w-2/3'>
+            <p className='text-sm font-semibold mx-6 my-6'>Over 1000 rooms in: {location}</p>
+            <Cards list={searchResults} />
+          </div>
+            <div className='hidden xl:inline-flex xl:w-1/3'>
+            <BaseMap className='' />
+
+            </div>
+
+          </div>
+
+      </main>
+      <footer>
+        <MobileFooter />
+        <ResultsPageFooter />
+      </footer>
     </div>
   )
 }
@@ -38,7 +58,7 @@ export default Search
 
 export async function getServerSideProps() {
   const searchResults = await fetch('https://www.jsonkeeper.com/b/6YIE')
-  .then(
+    .then(
       (res) => res.json()
     );
 

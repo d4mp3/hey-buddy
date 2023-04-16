@@ -27,7 +27,7 @@ const InfoPlace = ({ imgSrc, location, title, desc, rating, price, total }) => {
   ];
 
   return (
-    <div className="place-detail flex flex-col sm:flex-row border-b p-4">
+    <div className="place-detail flex flex-col sm:flex-row border-b p-4 xl:mx-48">
       {/* <img src={imgSrc} alt={title} className="w-full sm:w-1/2 rounded-lg sm:rounded-l-lg object-cover" /> */}
       {/* <Gallery initState={false} images={imageSrc} widths={widths} ratios={ratios}/> */}
       {/* <PhotoAlbum layout="rows" photos={photos} /> */}
@@ -39,7 +39,7 @@ const InfoPlace = ({ imgSrc, location, title, desc, rating, price, total }) => {
         cssMode={true}
         pagination
         modules={[Pagination, Navigation]}
-        className='w-full h-96 sm:w-1/2'
+        className='w-full h-96 sm:w-1/2 lg:w-5/12'
       >
         {imgSrc.map((src, i) => (
           <SwiperSlide className='' key={i}>
@@ -47,7 +47,7 @@ const InfoPlace = ({ imgSrc, location, title, desc, rating, price, total }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className='flex flex-col flex-grow pl-5'>
+      <div className='flex flex-col flex-grow pl-5 pr-16'>
         <div className='flex justify-between'>
           <p>{location}</p>
           <HeartIcon className='h-7 cursor-pointer' />

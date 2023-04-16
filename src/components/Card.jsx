@@ -38,7 +38,7 @@ function Card({card}) {
     <p className='m-0 text-gray-400'>{card.desc}</p>
     <p className='m-0 text-gray-400'>{card.date}</p>
     <p className='m-1 text-black text-base'>
-      <span className='font-semibold'>{card.price}</span> € night
+      <span className='font-semibold'>€{card.price}</span> / night
     </p>
   </div>
   )

@@ -5,9 +5,10 @@ import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { DateRangePicker } from 'react-date-range';
 import { useRouter } from 'next/router';
+import { twMerge } from "tailwind-merge";
 
 
-function Header( {placeholder} ) {
+function Header( {placeholder, className} ) {
   const [searchInput, setSearchInput] = useState('');
   const [startDate, setSartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -42,8 +43,10 @@ function Header( {placeholder} ) {
   };
 
 
+  const classes = twMerge(`overflow-hidden sticky top-0 z-50 grid grid-cols-3 shadow p-5 pr-16 bg-white ${className ?? ''}`);
+
   return (
-    <header className='overflow-hidden sticky top-0 z-50 grid grid-cols-3 shadow p-5 pr-16 bg-white'>
+    <header className={classes}>
       <div onClick={() => router.push('/')} className='relative hidden md:flex items-center h-10 cursor-pointer my-auto'>
         <img className='h-56' src='/long-logo.png' alt='logo'></img>
       </div>

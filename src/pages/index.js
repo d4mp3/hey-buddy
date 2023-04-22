@@ -8,6 +8,7 @@ import Header from '@/components/Header';
 import Cards from '@/components/Cards';
 import HomeFooter from '@/components/HomeFooter';
 import MobileFooter from '@/components/MobileFooter';
+import ShowMapButton from '@/components/ShowMapButton';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,8 +30,10 @@ export default function Home({ exploreData }) {
         setSelectedFilter={setSelectedFilter}
       />
       {selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />}
+      <ShowMapButton className='fixed top-12' />
       <MobileFooter />
       <HomeFooter className='fixed bottom-0' />
+
       {/* {exploreData?.map(item => (
         <h1>{item.title}</h1>
       ))} */}

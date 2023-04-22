@@ -12,7 +12,6 @@ function BaseMap() {
     });
 
     return (
-      <div>
         <Map
           mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
         //   initialViewState={{
@@ -21,14 +20,13 @@ function BaseMap() {
         //     zoom: 3.5,
         //   }}
         {...viewport}
-          mapStyle="mapbox://styles/d4mp3/clgimqwqy006r01qte4457m9w"
+          mapStyle="mapbox://styles/d4mp3/clgp9b8ga00ie01o10zgx6t64"
         >
           <GeolocateControl
             positionOptions={{ enableHighAccuracy: true }}
             trackUserLocation={true}
           />
         </Map>
-      </div>
     );
   }
   export default BaseMap;

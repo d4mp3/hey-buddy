@@ -39,7 +39,7 @@ function Search({ searchResults }) {
             <Cards list={searchResults} />
           </div>
             <div className='hidden xl:inline-flex xl:w-1/3'>
-            <BaseMap className='' />
+            <BaseMap searchResults={searchResults} />
 
             </div>
 
